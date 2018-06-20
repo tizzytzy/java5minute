@@ -24,6 +24,8 @@ public class MusicControl {
 
         music.put("35847388","http://m10.music.126.net/20180616013236/76bb2184a54648f7696b2b17bf5be088/ymusic/de9a/6885/e183/effb8f74546c98fd619d51f22e2bfaaf.mp3");
 
+
+        music.put("16435049","http://m10.music.126.net/20180620215815/68ae9b90ebf3a847b8abf1225f0a003b/ymusic/0cce/0768/52ed/db86bd40d6ba02bc4dc09cc942216662.mp3");
     }
 
             }
