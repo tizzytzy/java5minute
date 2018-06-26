@@ -36,7 +36,7 @@ public class CommentPostControl {
         });
 
 
-        return "redirect:/comments";
+        return "redirect:/songinfo?songId="+songId;
 
     }
 
