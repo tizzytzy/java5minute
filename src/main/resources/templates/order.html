@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html th:replace="~{layout/layout :: layout(~{::title},~{::div})}">
+
+<head>
+    <title>订单号查询</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="alert alert-primary" role="alert">
+        请在此处输入十二位数字订单号码
+    </div>
+
+    <form action="/order" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" name="url" placeholder="请输入物流订单号码">
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="window.location.href='http://localhost:8080/ordergroup'" >查询</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

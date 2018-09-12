@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单号信息</title>
+    <script src="/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<h1>订单信息</h1>
+
+<ul th:each="orderInfo:${orderInfos}">
+    <li>订单号:
+        <span th:text="${orderInfo.orderNumber}"></span>
+    </li>
+    <li>订单详情：
+        <label>寄件人：</label>
+    <span th:text="${orderInfo.sender}"></span>
+        <label>收件人：</label>
+        <span th:text="${orderInfo.receiver}"></span>
+        <label>寄件人电话：</label>
+        <span th:text="${orderInfo.senderPhone}"></span>
+        <label>寄件人地址：</label>
+        <span th:text="${orderInfo.senderAddress}"></span>
+        <label>收件人电话：</label>
+        <span th:text="${orderinfo.receiverPhone}"></span>
+        <label>收件人地址：</label>
+        <span th:text="${orderInfo.receiverAddress}"></span>
+        <label>货品种类：</label>
+        <span th:text="${orderInfo.goodsKind}"></span>
+        <label>下单时间：</label>
+        <span th:text="${orderInfo.orderTimes}"></span>
+    </li>
+
+
+</ul>
+
+</body>
+
+
+
+</html>
+
